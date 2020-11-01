@@ -67,10 +67,13 @@
     <Compile Include="Assets\External Assets\Fantasy Monster(wizard) Demo\Environment\Scripts\MoveCTRLDemo.cs" />
     <Compile Include="Assets\External Assets\L_FG_Assets_Pack_Lite\Demo\cameraMove.cs" />
     <Compile Include="Assets\External Assets\fantasySpider\FSP_ContinuousRotation.cs" />
+    <Compile Include="Assets\Scripts\CasterCast.cs" />
     <Compile Include="Assets\Scripts\EnemySpawn.cs" />
     <Compile Include="Assets\Scripts\GameLogic.cs" />
+    <Compile Include="Assets\Scripts\KeyController.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <None Include="Assets\External Assets\L_FG_Assets_Pack_Lite\Demo\Read me01.txt" />
+    <None Include="Assets\External Assets\Key\readME keys.txt" />
     <None Include="Assets\External Assets\Fantasy Monster(wizard) Demo\READ ME(wizard)\character setup guide link.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

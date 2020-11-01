@@ -3,41 +3,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameLogic : MonoBehaviour
+
+namespace DontWannaDie
 {
-    private GameObject[] spawnPoints;
-
-    private void Awake()
+    public class GameLogic : MonoBehaviour
     {
-        spawnPoints = GameObject.FindGameObjectsWithTag("SpawnPoint");
+        #region Fields
 
-        foreach(GameObject spawnPoint in spawnPoints)
+        #endregion
+
+
+        #region UnityMethods
+
+        private void Awake()
         {
-            GameObject enemy = Instantiate(spawnPoint.GetComponent<EnemySpawn>().enemy, spawnPoint.transform.position, spawnPoint.transform.rotation);
 
-            switch (spawnPoint.GetComponent<EnemySpawn>().enemyType)
-            {
-                case EnemySpawn.EnemyType.spider:
-                    break;
-                case EnemySpawn.EnemyType.caster:
-                    enemy.transform.Rotate(0, 90, 0);
-                    break;
-                default:
-                    break;
-            }
-
-            spawnPoint.SetActive(false);
         }
-    } 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+
+        #endregion
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

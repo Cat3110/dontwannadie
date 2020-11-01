@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2598585307319288165}
-  - component: {fileID: 2598585307319288164}
+  - component: {fileID: 44778390585865174}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2598585307319288164
+--- !u!114 &44778390585865174
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 552adef4634a2d0468327640e605a1aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyType: 0
-  waypoints: []
+  _enemyObject: {fileID: 0}
+  _waypointsArray: []
 --- !u!1 &2598585308462858623
 GameObject:
   m_ObjectHideFlags: 0
