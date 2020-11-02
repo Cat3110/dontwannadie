@@ -16,9 +16,14 @@ namespace DontWannaDie
 
         #region UnityMethods
 
-        void Update()
+        private void FixedUpdate()
         {
             transform.Rotate(0, _rotationSpeed, 0, Space.Self);
+        }
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            Destroy(this.gameObject);
         }
 
         #endregion

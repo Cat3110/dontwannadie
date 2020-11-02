@@ -15404,6 +15404,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2856ed62ea95b7845b0ec500dbb223e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _timeBetweenAttack: 2
+  _spellObject: {fileID: 100002, guid: 200e650fba6c8492b87e96e4bc273510, type: 3}
+  _spellOffset: {x: 1, y: 2, z: 0}
 --- !u!1 &1000011604250198
 GameObject:
   m_ObjectHideFlags: 0
