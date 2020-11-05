@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\CasterCast.cs" />
     <Compile Include="Assets\Scripts\EnemySpawn.cs" />
     <Compile Include="Assets\Scripts\GameLogic.cs" />
+    <Compile Include="Assets\Scripts\GatesController.cs" />
     <Compile Include="Assets\Scripts\HitFinish.cs" />
     <Compile Include="Assets\Scripts\KeyController.cs" />
     <Compile Include="Assets\Scripts\OpenGate.cs" />

@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 
 namespace DontWannaDie
 {
@@ -14,6 +14,7 @@ namespace DontWannaDie
         [SerializeField] private GameObject _additionalCamera;
         [SerializeField] private GameObject _leftGate;
         [SerializeField] private GameObject _rightGate;
+        [SerializeField] private UnityEvent _onGetKey;
         private bool _isGatesClosed = true;
 
         #endregion
@@ -39,7 +40,7 @@ namespace DontWannaDie
 
         #region Methods
 
-        private void OpenGates(GameObject leftGate, GameObject rightGate)
+        public void OpenGates(GameObject leftGate, GameObject rightGate)
         {
             _isGatesClosed = false;
             _camera.SetActive(false);
@@ -58,6 +59,11 @@ namespace DontWannaDie
            
 
 
+        }
+
+        public void TestEvent(float s)
+        {
+            print(s);
         }
 
         #endregion

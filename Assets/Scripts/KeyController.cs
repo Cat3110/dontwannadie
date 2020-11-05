@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 
 namespace DontWannaDie
 {
@@ -10,11 +10,16 @@ namespace DontWannaDie
         #region Fields
 
         [SerializeField] private float _rotationSpeed;
+        [SerializeField] private UnityEvent _onGetKey;
 
         #endregion
 
 
         #region UnityMethods
+        private void Start()
+        {
+            _onGetKey = new UnityEvent();
+        }
 
         private void FixedUpdate()
         {
@@ -23,6 +28,7 @@ namespace DontWannaDie
 
         private void OnCollisionEnter(Collision collision)
         {
+            _onGetKey.Invoke();
             Destroy(this.gameObject);
         }
 
