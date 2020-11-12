@@ -24,7 +24,7 @@ namespace DontWannaDie
 
         [SerializeField] private EnemyType enemyType;
         [SerializeField] private GameObject _enemyObject;
-        [SerializeField] private GameObject[] _waypointsArray;
+        [SerializeField] private GameObject _spawnWaypoint;
 
         #endregion
 
@@ -34,6 +34,8 @@ namespace DontWannaDie
         private void Awake()
         {
             Instantiate(_enemyObject, transform.position, transform.rotation);
+            if (_spawnWaypoint)
+                _enemyObject.GetComponent<SpiderMooveController>().destinationObject = _spawnWaypoint;
             Destroy(this.gameObject);
         }
 
