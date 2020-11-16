@@ -31,7 +31,7 @@ namespace DontWannaDie
 
         #region UnityMethods
 
-        private void Awake()
+        private void Start()
         {
             Instantiate(_enemyObject, transform.position, transform.rotation);
             if (_spawnWaypoint)

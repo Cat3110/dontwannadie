@@ -458,6 +458,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: SpawnPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 2598585307319288162, guid: 75abe58f50d88064ba466f80939c53be,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2598585307319288165, guid: 75abe58f50d88064ba466f80939c53be,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1403,6 +1408,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: SpawnPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 2598585307319288162, guid: 75abe58f50d88064ba466f80939c53be,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2598585307319288165, guid: 75abe58f50d88064ba466f80939c53be,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1561,6 +1571,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: SpawnPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 2598585307319288162, guid: 75abe58f50d88064ba466f80939c53be,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2598585307319288165, guid: 75abe58f50d88064ba466f80939c53be,
         type: 3}
@@ -3725,6 +3740,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: SpawnPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 2598585307319288162, guid: 75abe58f50d88064ba466f80939c53be,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2598585307319288165, guid: 75abe58f50d88064ba466f80939c53be,
         type: 3}
@@ -9430,6 +9450,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: SpawnPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 2598585307319288162, guid: 75abe58f50d88064ba466f80939c53be,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2598585307319288165, guid: 75abe58f50d88064ba466f80939c53be,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10445,6 +10470,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: SpawnPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 2598585307319288162, guid: 75abe58f50d88064ba466f80939c53be,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2598585307319288165, guid: 75abe58f50d88064ba466f80939c53be,
         type: 3}
@@ -11740,6 +11770,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: SpawnPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 2598585307319288162, guid: 75abe58f50d88064ba466f80939c53be,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2598585307319288165, guid: 75abe58f50d88064ba466f80939c53be,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12846,6 +12881,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: SpawnPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 2598585307319288162, guid: 75abe58f50d88064ba466f80939c53be,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2598585307319288165, guid: 75abe58f50d88064ba466f80939c53be,
         type: 3}
