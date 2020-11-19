@@ -10,38 +10,41 @@ namespace DontWannaDie
     {
         #region Fields
 
-        [SerializeField] private Vector3 _cameraOffset;
-        private GameObject _target;
+        [SerializeField] private Vector3 _cameraInitialOffset;
+        [SerializeField] private GameObject _target;
+
+        private float _cameraXZOffset;
+        private Vector3 _cameraRotationOffset;
 
         #endregion
 
 
         #region UnityMethods
 
-        private void Awake()
+        private void Start()
         {
-            _target = GameObject.FindGameObjectWithTag("Player");
+            transform.position = _cameraInitialOffset;
+            _cameraXZOffset = Mathf.Sqrt(Mathf.Pow(transform.position.x, 2) + Mathf.Pow(transform.position.z, 2));
         }
 
         private void FixedUpdate()
         {
-            CamFollow(_target);
+            transform.position = NewCameraCoords(_target);
+            transform.rotation = _target.transform.rotation;
+            transform.Rotate(45, 0, 0, Space.Self);
         }
 
         #endregion
 
 
         #region Methods
-
-        private void CamFollow(GameObject target)
+        
+        private Vector3 NewCameraCoords(GameObject target)
         {
-            if ((_target.transform.rotation.eulerAngles.y - transform.rotation.eulerAngles.y) != 0)
-            {
-                transform.RotateAround(_target.transform.position, Vector3.up, _target.transform.rotation.eulerAngles.y - transform.rotation.eulerAngles.y);
-                _cameraOffset = transform.position - _target.transform.position;
-            }
-
-            transform.position = _target.transform.position + _cameraOffset;
+            _cameraRotationOffset.x = - _cameraXZOffset * Mathf.Sin(_target.transform.rotation.eulerAngles.y * Mathf.PI / 180);
+            _cameraRotationOffset.y = _cameraInitialOffset.y;
+            _cameraRotationOffset.z = - _cameraXZOffset * Mathf.Cos(_target.transform.rotation.eulerAngles.y * Mathf.PI / 180);
+            return _cameraRotationOffset + _target.transform.position;
         }
 
         #endregion

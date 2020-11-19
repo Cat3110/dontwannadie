@@ -24,15 +24,15 @@ namespace DontWannaDie
 
         private void Start()
         {
-            _additionalCamera.SetActive(false);
-            _camera.SetActive(true);
+            //_additionalCamera.SetActive(false);
+            //_camera.SetActive(true);
         }
 
 
         private void Update()
         {
-            if (_isGatesClosed && (GameObject.FindGameObjectsWithTag("Key").Length == 0)) 
-                OpenGates(_leftGate, _rightGate);
+            //if (_isGatesClosed && (GameObject.FindGameObjectsWithTag("Key").Length == 0)) 
+            //    OpenGates(_leftGate, _rightGate);
         }
 
         #endregion
@@ -59,11 +59,6 @@ namespace DontWannaDie
            
 
 
-        }
-
-        public void TestEvent(float s)
-        {
-            print(s);
         }
 
         #endregion
