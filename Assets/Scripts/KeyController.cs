@@ -16,10 +16,6 @@ namespace DontWannaDie
 
 
         #region UnityMethods
-        private void Start()
-        {
-            _onGetKey = new UnityEvent();
-        }
 
         private void FixedUpdate()
         {
