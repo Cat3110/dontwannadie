@@ -25,7 +25,7 @@ namespace DontWannaDie
 
         private void Update()
         {
-            if (_agent.remainingDistance < _agent.stoppingDistance)
+            if (_agent.remainingDistance <= _agent.stoppingDistance)
             {
                 destinationObject = destinationObject.GetComponent<WaypointController>().nextWaypoint;
                 _agent.SetDestination(destinationObject.transform.position);

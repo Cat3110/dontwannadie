@@ -33,9 +33,9 @@ namespace DontWannaDie
 
         private void Start()
         {
-            Instantiate(_enemyObject, transform.position, transform.rotation);
+            GameObject enemy = Instantiate(_enemyObject, transform.position, transform.rotation);
             if (_spawnWaypoint)
-                _enemyObject.GetComponent<SpiderMooveController>().destinationObject = _spawnWaypoint;
+                enemy.GetComponent<SpiderMooveController>().destinationObject = _spawnWaypoint;
             Destroy(this.gameObject);
         }
 
