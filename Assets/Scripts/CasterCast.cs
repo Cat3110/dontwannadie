@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,14 +13,26 @@ namespace DontWannaDie
 
         [SerializeField] private float _timeBetweenAttack;
         [SerializeField] private GameObject _spellObject;
+        [SerializeField] private Vector3 _spellOffset;
+        private float _actualTime;
 
         #endregion
-        
+
 
         #region UnityMethods
-        void Update()
-        {
 
+        private void Start()
+        {
+            _actualTime = _timeBetweenAttack;
+        }
+        private void Update()
+        {
+            _actualTime -= Time.deltaTime;
+            if (_actualTime <= 0)
+            {
+                Instantiate(_spellObject, transform.position + _spellOffset, transform.rotation);
+                _actualTime = _timeBetweenAttack;
+            }
         }
 
         #endregion

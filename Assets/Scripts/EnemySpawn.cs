@@ -24,16 +24,18 @@ namespace DontWannaDie
 
         [SerializeField] private EnemyType enemyType;
         [SerializeField] private GameObject _enemyObject;
-        [SerializeField] private GameObject[] _waypointsArray;
+        [SerializeField] private GameObject _spawnWaypoint;
 
         #endregion
 
 
         #region UnityMethods
 
-        private void Awake()
+        private void Start()
         {
-            Instantiate(_enemyObject, transform.position, transform.rotation);
+            GameObject enemy = Instantiate(_enemyObject, transform.position, transform.rotation);
+            if (_spawnWaypoint)
+                enemy.GetComponent<SpiderMooveController>().destinationObject = _spawnWaypoint;
             Destroy(this.gameObject);
         }
 
